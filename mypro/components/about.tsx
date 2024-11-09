@@ -8,7 +8,7 @@ export default function About() {
       id="about"
       ref={ref}
     >
-      {inView ? 'I AM IN VIEW' : 'GRAAAAAAAAAAAAAAAA'}
+      {inView ? 'I AM full stack' : 'dev'}
     </section>
   )
 }
