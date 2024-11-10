@@ -23,6 +23,12 @@ export const links = [
     id: 'contact',
   },
 ] as const
+
+export const images = {
+  jegoliImg,
+  smsImg,
+  RealestateImg
+}
 export const projectsData = [
   {
     title: 'jegoli ',
