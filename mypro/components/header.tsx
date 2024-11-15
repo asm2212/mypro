@@ -26,13 +26,13 @@ export default function Header() {
           {links.map((link) => (
             <motion.li
             className={clsx(
-                'h-3/4 flex items-center justify-center relative',
-                {
-                  'text-black ': activeSection === link.id && theme === 'dark',
-                  'text-[#001114]':
-                    activeSection === link.id && theme === 'light',
-                }
-              )}
+              'h-3/4 flex items-center justify-center relative',
+              {
+                'text-black ': activeSection === link.id && theme === 'dark',
+                'text-[#001114]':
+                  activeSection === link.id && theme === 'light',
+              }
+            )}
               key={link.id}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}

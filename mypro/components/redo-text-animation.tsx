@@ -1,5 +1,6 @@
 'use client'
 import { motion, useMotionValue, useTransform, animate } from 'framer-motion'
+import { useTheme } from 'next-themes'
 import { useEffect } from 'react'
 export interface IRedoTextAnimationProps {
   delay: number
@@ -24,6 +25,7 @@ export default function RedoTextAnimation({ delay }: IRedoTextAnimationProps) {
     baseText.get().slice(0, latest)
   )
   const updatedThisRound = useMotionValue(true)
+  const { theme } = useTheme()
   useEffect(() => {
     animate(count, 60, {
       type: 'tween',
@@ -49,7 +51,11 @@ export default function RedoTextAnimation({ delay }: IRedoTextAnimationProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   return (
-    <motion.span className="text-2xl font-bold bg-[#ffcbb4]">
+    <motion.span
+    className={`text-2xl font-bold ${
+      theme === 'dark' ? 'bg-[#ddbea9]' : 'bg-[#ffcbb4]'
+    }`}
+  >
       {displayText}
     </motion.span>
   )
