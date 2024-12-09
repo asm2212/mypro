@@ -69,7 +69,7 @@ export const skillsData = [
   ['Tailwind', '/svgs/tailwind-css.svg'],
   ['Shadcn', '/svgs/shadcnui.svg'],
   ['Headless', '/svgs/brand-headlessui.svg'],
-  ['Prisma', '/svgs/file-type-light-prisma.svg'],
+  ['Prisma', '/svgs/file-type-light-prisma.svg'], 
   ['MongoDB', '/svgs/mongodb-original.svg'],
   ['PostgreSQL', '/svgs/postgresql.svg'],
   ['Redux', '/svgs/redux-original.svg'],
